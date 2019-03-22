@@ -16,7 +16,7 @@ public class Hotel {
   private List<Review> reviews;
 
   protected Hotel() {
-    reviews = new ArrayList<>();
+    this.reviews = new ArrayList<>();
   }
 
   public Hotel(String name, int pricePerNight, Address address, List<Review> reviews) {
@@ -27,18 +27,22 @@ public class Hotel {
   }
 
   public int getPricePerNight() {
-    return pricePerNight;
+    return this.pricePerNight;
+  }
+
+  public String getId() {
+    return this.id;
   }
 
   public String getName() {
-    return name;
+    return this.name;
   }
 
   public Address getAddress() {
-    return address;
+    return this.address;
   }
 
   public List<Review> getReviews() {
-    return reviews;
+    return this.reviews;
   }
 }
