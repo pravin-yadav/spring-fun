@@ -31,7 +31,7 @@ public class HotelController {
     this.hotelRepository.insert(hotel);
   }
 
-  // Post method to insert in database "data & id both is required in the body"
+  // Post method to update in database "data & id both is required in the body"
   @PostMapping
   public void update(@RequestBody Hotel hotel) {
     this.hotelRepository.save(hotel);
